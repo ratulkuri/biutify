@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #da5745;
+  --primary-hover-color: #cf5140;
+  --primary-active-color: #b44233;
+  --light-red: #f9f5f4;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  outline: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.divider.vertical {
+  width: 3px;
+  background: #eeecec;
+  height: 75%;
+}
+
+.theme-bg {
+  background-color: var(--primary-color) !important;
+}
+
+/* ////////////////////////////////////////////////// */
+/* ------------- Buttons Styles Start ---------------- */
+
+.theme-btn {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.theme-btn.lg {
+  padding: 10px 20px;
+}
+
+.theme-btn.sm {
+  padding: 2px 4px;
+}
+
+.theme-btn.rounded {
+  border-radius: 80px !important;
+}
+
+.theme-btn.outline {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.theme-btn.outline.lite {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.theme-btn.outline:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border-color: var(--primary-color) !important;
+}
+
+.theme-btn.outline:active {
+  background-color: var(--primary-active-color) !important;
+  color: #fff !important;
+  border-color: var(--primary-active-color) !important;
+}
+
+.theme-btn:not(.outline):hover {
+  background-color: var(--primary-hover-color) !important;
+}
+.theme-btn:not(.outline):active {
+  background-color: var(--primary-active-color) !important;
+}
+
+/* ------------- Buttons Styles End ---------------- */
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+/* ------------- Header Styles Start ---------------- */
+
+.primary-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand-logo {
+  height: 40px;
+}
+
+.login-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+.professionals-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+.login-btn .icon {
+  font-size: 22px;
+  display: none;
+}
+.professionals-btn .icon {
+  font-size: 18px;
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  /* .professionals-btn {
+    display: none;
+  } */
+
+  .login-btn {
+    font-size: 12px;
+    padding: 6px 10px !important;
+  }
+  .professionals-btn {
+    font-size: 12px;
+    padding: 6px 10px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .login-btn,
+  .professionals-btn {
+    border: none;
+    padding: 4px !important;
+    margin: 0 4px;
+  }
+
+  .login-btn .icon,
+  .professionals-btn .icon {
+    display: inline-block !important;
+  }
+  .login-btn span,
+  .professionals-btn span {
+    display: none;
+  }
+}
+
+/* ------------- Header Styles End ---------------- */
+/* ////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+/* ------------- Hero Styles Start ---------------- */
+
+.hero-section {
+  background-image: url('./assets/hero-biutify.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #90593d;
+  position: relative;
+}
+
+.hero-container {
+  min-height: 1080px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-text {
+  font-size: 48px;
+  color: #fff;
+  display: inline-block;
+  max-width: 510px;
+  font-weight: 600;
+}
+
+.search-container {
+  border-radius: 80px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 4px;
+}
+
+.search-form .input-wrapper {
+  padding: 13px 0px;
+}
+
+.search-form .input-group .input-group-text {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+.search-form .input-group .input-group-text,
+.search-form .input-group input {
+  border-radius: 0;
+  background: #fff;
+  border: transparent;
+}
+
+.search-form .input-group input {
+  max-width: 180px;
+  padding-left: 0;
+}
+.search-form .input-group input:focus {
+  box-shadow: none;
+}
+.search-form .input-group input::placeholder {
+  color: #888888;
+}
+
+.search-form .input-group + .input-group {
+  border-left: 1px solid #ccc;
+}
+
+.search-btn {
+  padding: 14px 30px;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1441px) {
+  .hero-section {
+    background-position-y: -300px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .hero-container {
+    min-height: 760px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .hero-container {
+    min-height: 620px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .hero-container {
+    min-height: 585px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    min-height: 470px;
+  }
+  .hero-text {
+    font-size: 36px;
+  }
+  .search-form .input-wrapper {
+    padding: 13px 0px;
+  }
+  .search-form .input-group input {
+    max-width: 180px;
+  }
+  .search-form .input-group .input-group-text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero-container {
+    min-height: 450px;
+    justify-content: center;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 48px;
+    max-width: 650px;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    min-height: 550px;
+  }
+  .search-form .input-wrapper {
+    padding: 12px 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .hero-container {
+    min-height: 470px;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 42px;
+    max-width: 650px;
+  }
+  .search-form .input-wrapper {
+    padding: 8px 0px;
+  }
+  .search-form .input-group .input-group-text {
+    padding: 8px 10px;
+  }
+  .search-btn {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero-container {
+    min-height: 300px;
+    z-index: 1;
+    padding-top: 120px;
+  }
+  .hero-text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-section {
+    /* background-image: none; */
+    min-height: 370px;
+    background-position-x: -280px;
+  }
+}
+
+
+/* ------------- Hero Styles End ---------------- */
+/* ////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////// */
+/* ------------- Professionals List Styles Start ---------------- */
+
+.professionals-wrapper {
+  background-color: #F9F5F4;
+  border-radius: 50px;
+  padding: 50px 60px;
+}
+
+.professional-column {
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 15px;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 80px;
+  height: calc(100% - 80px);
+}
+
+.avatar-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+.avatar-wrap img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid #F9F5F4;
+}
+
+.profile-card .name {
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.profile-card .name span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+}
+
+.profile-card .name .icon {
+  color: var(--primary-active-color);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.profile-card .services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-card .service {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-card button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-card .service {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .professionals-wrapper {
+    padding: 30px 30px;
+    padding-top: 40px;
+  }
+}
+
+
+/* ------------- Professionals List Styles Start ---------------- */
+/* ////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////// */
+/* ------------- Utilites Styles Start ---------------- */
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #EAD620;
+}
+
+.section-header {
+  padding: 80px 15px;
+  padding-top: 120px;
+}
+
+.section-title {
+  font-size: 62px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .section-header {
+    padding: 60px 15px;
+    padding-top: 80px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-header {
+    padding: 40px 15px;
+    padding-top: 60px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* ------------- Utilites Styles End ---------------- */
+/* ////////////////////////////////////////////////// */
