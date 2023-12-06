@@ -2,7 +2,7 @@ export const professionals = [
     {
         id: 1,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=11',
         rating: 5,
         reviews: 14,
         completed: false,
@@ -33,7 +33,7 @@ export const professionals = [
     {
         id: 2,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=12',
         rating: 5,
         reviews: 14,
         completed: true,
@@ -64,7 +64,7 @@ export const professionals = [
     {
         id: 3,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=13',
         rating: 5,
         reviews: 14,
         completed: false,
@@ -95,10 +95,10 @@ export const professionals = [
     {
         id: 4,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=14',
         rating: 5,
         reviews: 14,
-        completed: false,
+        completed: true,
         skills: [
             'Manicure',
             'Make-up Artist'
@@ -126,10 +126,10 @@ export const professionals = [
     {
         id: 5,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=15',
         rating: 5,
         reviews: 14,
-        completed: true,
+        completed: false,
         skills: [
             'Manicure',
             'Make-up Artist'
@@ -157,7 +157,7 @@ export const professionals = [
     {
         id: 6,
         name: 'Elisa Rossi',
-        avatar: 'https://i.pravatar.cc/300',
+        avatar: 'https://i.pravatar.cc/300?img=16',
         rating: 5,
         reviews: 14,
         completed: true,
