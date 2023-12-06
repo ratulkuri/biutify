@@ -433,7 +433,7 @@ a {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .professionals-wrapper {
     padding: 30px 30px;
     padding-top: 40px;
