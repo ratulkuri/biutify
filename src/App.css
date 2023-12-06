@@ -386,6 +386,7 @@ a {
   object-fit: cover;
   border-radius: 50%;
   border: 15px solid #F9F5F4;
+  background-color: #fff;
 }
 
 .profile-card .name {
@@ -426,6 +427,7 @@ a {
   height: 58px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: #ccc;
 }
 
 .profile-card button {

@@ -8,7 +8,7 @@ const ProfileCards = ({profile = {}}) => {
             Object.keys(profile).length > 0 &&
             <div className="profile-card">
                 <div className="avatar-wrap">
-                    <img src={profile?.avatar} alt="avatar" />
+                    <img loading="lazy" src={profile?.avatar} alt="avatar" />
                 </div>
                 <div className="d-flex flex-column align-items-center gap-2">
                     <h3 className="name">
@@ -42,7 +42,7 @@ const ProfileCards = ({profile = {}}) => {
                             profile?.services?.length > 0 &&
                             profile?.services?.map((service, index) => {
                                 if (index < 4) {
-                                    return <img className="service" key={`service-${index}`} src={service?.img} alt={service?.name} />
+                                    return <img loading="lazy" className="service" key={`service-${index}`} src={service?.img} alt={service?.name} />
                                 }
                             })
                         }
